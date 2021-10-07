@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boiler Plate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <header class="header"> 
+        <h1>Calculate a weight of an object on a planet</h1>
+        <div class="list-info"> 
+          <input type="text" id="mass-input" class="input" placeholder="Mass in Kilogram">
+        <select class="select" id="planet" placeholder="select">
+            <option value='none'>--select planet-- </option>
+            <option value='none'>Mercury</option>
+            <option value='none'>Venus</option>
+            <option value='none'>Earth</option>
+            <option value='none'>Mars</option>
+            <option value='none'>Jupiter</option>
+            <option value='none'>Saturn</option>
+            <option value='none'>Uranus</option>
+            <option value='none'>Neptune</option>
+            <option value='none'>Pluto</option>
+        </select>
+        <button class="btn" id="btn">Calculate weight</button>
+        <input type="text" id="mass-output">
+
+
+        </div>
+ </header>
+    <main>
+        <div class="flex-container">
+            <div class="flex-item image">
+                <img src='./assests/images/earth.png' class="planet-image" />
+            </div>
+            <div class="flex-item description"></div>
+            <p class="message"></p>
+            <div class="result-planets">
+              <p class="weight" id="weight"></p>
+            </div>
+
+        </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
